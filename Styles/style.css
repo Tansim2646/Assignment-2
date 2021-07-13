@@ -1,0 +1,169 @@
+/* ---Default margin padding resetting--- */
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Css custom property and variables  */
+
+:root{
+    --banner-background-color:#2D25A0;
+    --text-color-white:#FFFFFF;
+    --primary--button--color:#E02C6D;
+    
+}
+/*----utility class---- */
+
+.container{
+    width: 1161px;
+    margin: 0 auto;
+
+}
+
+/* Header section = =  Nav & banner */
+
+header{
+    background-color: var(--banner-background-color);
+    width: 100vw;
+    padding-top: 48px;
+    padding-bottom: 86px;
+    
+    
+    
+}
+
+/* ---Navbar--- */
+
+nav{
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav ul li{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+nav ul li:hover{
+    color: var(--primary--button--color);
+}
+nav ul li:not(:last-child)
+{
+    margin-right: 36px;
+}
+
+nav a{
+    padding: 10px 24px;
+    background-color: var(--primary--button--color);
+    color: var(--text-color-white);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.fa-arrow-right{
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+/* ---banner--- */
+
+
+.banner{
+    display: flex;
+    align-items: center;
+    margin-top: 64px;
+    justify-content: space-between;
+    
+}
+
+.banner__cta{
+    width: 485px;
+    height: 270px;
+    position: relative;
+    top: -45px;
+    
+}
+
+.banner__heading{
+    font-weight: 700;
+    font-size: 64px; 
+    color: var(--text-color-white);
+    margin-bottom: 27px;
+    
+}
+.banner__image img{
+    width: 556px;
+    height: 452px;
+}
+
+/* button and button animation */
+
+.primary__button{
+    padding: 10px 24px;
+    background-color: var(--primary--button--color);
+    text-decoration: none;
+    color: var(--text-color-white);
+    border-radius: 50px;
+    position: relative;
+    display: inline-block;
+    transition: all .4s;
+    
+
+}
+.primary__button:hover{
+    transform: translateY(-.05rem);
+    box-shadow: 0 .5rem 2rem rgba(0, 0,0,.2);
+}
+.primary__button:active{
+    transform: translateY(-.1rem);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+}
+
+.primary__button::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: inline-block;
+    border-radius: 50px;
+    background-color: var(--primary--button--color);
+    top: 0;
+    left: 0;
+    transition: all .4s;
+    z-index: -1;
+    
+    
+
+}
+
+.primary__button:hover::after{
+    transform: scaleX(1.5) scaleY(1.6);
+    opacity: 0;
+}    
+
+
+
+
+
+
+
+
