@@ -23,13 +23,15 @@
     <header>
       <nav class="container">
         <ul>
+          <!--I didn't use any <a> tag here because here i am not redirecting to anywhere from nav  -->
+          <li class="hamburger"><i class="fas fa-bars"></i></li>
           <li>Home</li>
           <li>Clubs</li>
           <li>World Cup 2023</li>
           <li>Upcoming Matches</li>
           <li>Contact</li>
         </ul>
-        <a href="#"><i class="fas fa-sign-in-alt"></i> Login</a>
+        <a class="login" href="#"><i class="fas fa-sign-in-alt"></i> Login</a>
       </nav>
       <div class="banner container">
         <div class="banner__cta">
@@ -247,30 +249,37 @@
 
       <!-- Extra section-2 -->
       <section class="Highlights__section">
-
         <div class="highlight__div">
-            <div class="highlight__cta">
+          <div class="highlight__cta">
+            <h2 class="highlight__heading">All Highlights Copa America 2021</h2>
+            <p>
+              Enjoy all the Copa America Highlights withease.Check yuor portal
+              to get lates highlight of the moments.Subscribe to our newsletter
+              to get the latest news.
+            </p>
 
-                <h2 class="highlight__heading">
-                    All Highlights Copa America 2021
-                </h2>
-                <p>Enjoy all the Copa America Highlights withease.Check yuor portal to get lates highlight of the moments.Subscribe to our newsletter to get the latest news.</p>
-
-                <a href="#" class="primary__button"> See more <i class="fas fa-eye"></i></a>
-
-            </div>
-            <div class="highlight__image">
-                <img src="Images/match.png" alt="match">
-                
-            </div>
+            <a href="#" class="primary__button">
+              See more <i class="fas fa-eye"></i
+            ></a>
+          </div>
+          <div class="highlight__image">
+            <img src="Images/match.png" alt="match" />
+          </div>
         </div>
-
-
-
-
-         
-
       </section>
     </main>
+    <footer class="container">
+      <div class="footer__image">
+        <img src="Images/Logo.png" alt="footer image" />
+      </div>
+
+      <div class="footer__div">
+        <div class="icon__div"><i class="fab fa-instagram"></i></div>
+        <div class="icon__div"><i class="fas fa-basketball-ball"></i></div>
+        <div class="icon__div"><i class="fab fa-twitter"></i></div>
+        <div class="icon__div"><i class="fab fa-youtube"></i></div>
+      </div>
+      <h3>Copyright &#169; 2022 Football</h3>
+    </footer>
   </body>
 </html>
