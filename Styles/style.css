@@ -28,6 +28,7 @@ body{
 
 }
 
+
 /* Header section = =  Nav & banner */
 
 header{
@@ -108,7 +109,14 @@ nav a{
     font-size: 64px; 
     color: var(--text-color-white);
     margin-bottom: 27px;
+    animation: moveInleft 2s;
     
+}
+
+.color-changing-text{
+    animation: colorChange 30s infinite ease-out 2s;
+
+
 }
 .banner__image img{
     width: 556px;
@@ -160,6 +168,54 @@ nav a{
     opacity: 0;
 }    
 
+/* ---Css animation */
+@keyframes moveInleft
+{
+    0%{
+        opacity: 0;
+        transform: translateX(-70px);
+    }
+    100%{
+        opacity: 1;
+        transform: 0;
+    }
+}
+
+@keyframes colorChange{
+    0%{
+        color: var(--primary--button--color);
+    }
+    10%{
+        color: #eeeb2a;
+    }
+    20%{
+        color: rgb(202, 20, 59);
+    }
+    30%{
+        color:#fe9c8f; 
+    }
+    40%{
+        color: #fdf498 ;
+    }
+    50%{
+      color:  #ffcc5c;
+    }
+    60%{
+        color: cyan;
+    }
+    70%{
+        color:darkorange
+    }
+    80%{
+       color: greenyellow;
+    }
+    90%{
+        color:mediumpurple
+    }
+    100%{
+        color: mediumvioletred;
+    }
+}
 
 
 
